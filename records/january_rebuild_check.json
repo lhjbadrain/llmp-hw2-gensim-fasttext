@@ -1,0 +1,11 @@
+{
+  "source_sha256": "37b85555df2f72642ff9815ac01f51d4f50024d80ca0e2e8a6be6f93b1038639",
+  "rebuilt_sha256": "c8f3b7c4c6d3e84a8deafade57dd4ef7985ec66de2cebf7a01aa1eab315f9c39",
+  "matches_migrated_cleaned_file": true,
+  "source_unchanged": true,
+  "paragraphs": 19358,
+  "article_groups": 3132,
+  "encoding": "GB18030 strict",
+  "reference_cleaner_sha256": "1d988ca3bd6304f75ea014e36739624a72fbdf9d15e0d4a8d965a74d1555d8ed",
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

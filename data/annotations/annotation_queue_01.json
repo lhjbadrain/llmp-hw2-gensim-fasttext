@@ -1,0 +1,191 @@
+{
+  "guideline_version": "v1",
+  "selection": "为减少初次阅读负担，从03、05、06、08版各取3篇；50—400词，全文不超过1000字符；排除先前试标与本批重复正文；seed=42；版面不生成标签。仅是受限候选池，不代表全月随机样本。",
+  "source_sha256": "c8f3b7c4c6d3e84a8deafade57dd4ef7985ec66de2cebf7a01aa1eab315f9c39",
+  "items": [
+    {
+      "article_id": "19980116-05-007",
+      "source_lines": [
+        11327,
+        11328,
+        11329
+      ],
+      "label": "其他",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-01",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "微生物肥料的技术功能、试验效果和推广，主线是农业科技。",
+      "source_text_sha256": "5ee6324e0db4b3aab11a386eaf639d7d0b8b74cb38a3a7054aad9c32a8b808b5"
+    },
+    {
+      "article_id": "19980123-08-009",
+      "source_lines": [
+        17379,
+        17380,
+        17381,
+        17382
+      ],
+      "label": "体育",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-02",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "拳击运动员泰森参加职业摔跤活动及参赛资格，主线是体育。",
+      "source_text_sha256": "fdcc09bf6f95d76865b13ff16fcd97829f9fa3e86d250cc2d1b3a7aa659fd6c2"
+    },
+    {
+      "article_id": "19980109-06-003",
+      "source_lines": [
+        5628,
+        5629,
+        5630,
+        5631,
+        5632
+      ],
+      "label": "国际",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-03",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "以色列政府撤军、巴以和平进程及美国斡旋，属于国际政治。",
+      "source_text_sha256": "831772dcd763f01443c662059765cda0454bae6ee0070f805b3bbfd1730e3766"
+    },
+    {
+      "article_id": "19980119-03-008",
+      "source_lines": [
+        13142,
+        13143,
+        13144,
+        13145
+      ],
+      "label": "其他",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-04",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "镇江市地方党建与干部培训，属于国内党务，非国际政治外交。",
+      "source_text_sha256": "0bb07c11c64d3d76184e9dabebb1b2777c5d3a0ae70e61acc73c8f5268fbecd2"
+    },
+    {
+      "article_id": "19980101-03-008",
+      "source_lines": [
+        219,
+        220,
+        221,
+        222,
+        223,
+        224
+      ],
+      "label": "国际",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-05",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "中国外长访问南非并与地方领导人会晤；虽涉及经贸，全文主线仍是建交背景下的官方外交访问。",
+      "source_text_sha256": "30f950dab248354a91a1a73fc821562dbd9303c3b368ac68f651df6f962cbcf7"
+    },
+    {
+      "article_id": "19980126-08-002",
+      "source_lines": [
+        20532,
+        20533,
+        20535,
+        20536,
+        20537,
+        20538
+      ],
+      "label": "体育",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-06",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "武术界迎春活动并回顾竞赛与运动员成绩，属于体育组织活动。",
+      "source_text_sha256": "3986eac6dd294414abf7bf9262b5156d7d2513f276a5e454159301cddc19e010"
+    },
+    {
+      "article_id": "19980121-05-008",
+      "source_lines": [
+        15363,
+        15364,
+        15365,
+        15366
+      ],
+      "label": "其他",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-07",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "多头铁树的人工培育方法及园林技术成果，属于科技或园艺。",
+      "source_text_sha256": "61573a3e94482dfbe9d560dc659787812f8ecc48111dc391cd1d2330f06419fc"
+    },
+    {
+      "article_id": "19980129-03-001",
+      "source_lines": [
+        22371,
+        22372,
+        22373,
+        22374
+      ],
+      "label": "其他",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-08",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "国外动物园老虎的繁育与生活图片说明，非国际政治外交。",
+      "source_text_sha256": "9484369b5148add57a83a05b161672cec93ef6c66e8479caf4b747df0b11915b"
+    },
+    {
+      "article_id": "19980127-08-008",
+      "source_lines": [
+        21573,
+        21574,
+        21575,
+        21576,
+        21577
+      ],
+      "label": "体育",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-09",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "波兰武术比赛的选手、项目和成绩，发生在国外仍属体育。",
+      "source_text_sha256": "48ee86bf3c55e1974ce077fad5ed02e6594be23fad05172eebb2f76671853ccf"
+    },
+    {
+      "article_id": "19980119-06-014",
+      "source_lines": [
+        13428,
+        13429,
+        13430,
+        13431
+      ],
+      "label": "国际",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-10",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "克罗地亚与南斯拉夫关系正常化及波黑和平进程，属于国际关系。",
+      "source_text_sha256": "fec78a38043a89c03c4d03e2f9fb2963a8495938dc9068ecb6bac87091fdfdff"
+    },
+    {
+      "article_id": "19980115-06-017",
+      "source_lines": [
+        10774
+      ],
+      "label": "其他",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-11",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "国外客机失事与搜救的事故报道，按当前狭义国际规则，不属于政治外交。",
+      "source_text_sha256": "fa23cdfa7220cc59ef27cfe3959d8388bf904fc332aee8604d041b8108c7de2b"
+    },
+    {
+      "article_id": "19980109-05-012",
+      "source_lines": [
+        5564,
+        5565,
+        5566,
+        5568
+      ],
+      "label": "其他",
+      "review_status": "user_accepted_ai_suggestion",
+      "sample_id": "Q01-12",
+      "label_source": "AI阅读全文提出候选标签与理由；用户在聊天回复“本批采用”统一采纳。未声称用户逐篇阅读全文或独立复标。",
+      "assistant_rationale": "电脑产品、网络服务及企业合作，属于信息技术和商业应用。",
+      "source_text_sha256": "92af12f4cd1eb0988c02b19e03fcef77b4e2973cda8ce7165db46ce23e461c83"
+    }
+  ],
+  "acceptance_note": "本批12条AI辅助标注经用户统一采纳；不等同于独立人工金标准。标签及理由不进入文本特征。尚未划分训练/测试。",
+  "publication_note": "Metadata only; article text and tokens intentionally omitted. corpus_io restores them from the separately obtained January source and verifies source_text_sha256."
+}

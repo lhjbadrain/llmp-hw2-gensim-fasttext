@@ -1,0 +1,65 @@
+{
+  "purpose": "用户确认的主题边界样例；交叉类暂不进入单标签二分类。",
+  "source_sha256": "c8f3b7c4c6d3e84a8deafade57dd4ef7985ec66de2cebf7a01aa1eab315f9c39",
+  "selection": "人工挑选跨版面与交叉主题样例，未按标题或版面直接生成标签",
+  "items": [
+    {
+      "sample_id": "D",
+      "article_id": "19980106-01-006",
+      "source_lines": [
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2436,
+        2437,
+        2438,
+        2439
+      ],
+      "label": "国际",
+      "review_status": "user_confirmed",
+      "label_source": "用户在聊天逐项确认",
+      "source_text_sha256": "8bed5ad299038076eec0c474ce3d009964909f5e6ca6f1ce943557be058f4ae2"
+    },
+    {
+      "sample_id": "E",
+      "article_id": "19980106-05-011",
+      "source_lines": [
+        2859,
+        2860,
+        2861,
+        2862,
+        2863,
+        2864
+      ],
+      "label": "体育",
+      "review_status": "user_confirmed",
+      "label_source": "用户在聊天逐项确认",
+      "source_text_sha256": "f21607c944eb15d44878b24e827f7754c3b5f016d14769c48567d6887f9a4c94"
+    },
+    {
+      "sample_id": "F",
+      "article_id": "19980102-03-011",
+      "source_lines": [
+        648
+      ],
+      "label": "其他",
+      "review_status": "user_confirmed",
+      "label_source": "用户在聊天逐项确认",
+      "source_text_sha256": "20451478d19a024e9495d9546fbb9cb51c9964476c83c34ba2d63ff9b074d71f"
+    },
+    {
+      "sample_id": "G",
+      "article_id": "19980109-08-009",
+      "source_lines": [
+        5834
+      ],
+      "label": "交叉",
+      "review_status": "user_confirmed",
+      "label_source": "用户在聊天逐项确认",
+      "source_text_sha256": "1ce4cd98023755047ace168b9d3091065bb302271a80877e7aa4e37761d1e4ca"
+    }
+  ],
+  "publication_note": "Metadata only; article text and tokens intentionally omitted. corpus_io restores them from the separately obtained January source and verifies source_text_sha256."
+}

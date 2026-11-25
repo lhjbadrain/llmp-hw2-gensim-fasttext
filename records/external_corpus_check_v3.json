@@ -1,0 +1,2434 @@
+{
+  "source_file": "PROJECT\\data\\external\\cnews.val.source.txt",
+  "source_sha256": "5fe95ea140023c6f5b729adad3e83498a3489c32e61cd7776bb15b20d443025b",
+  "source_note": "Community mirror spiritx2023/ThuCnews, revision 9d8de9a; original institutional download unavailable during checking.",
+  "purpose": "Independent Chinese representation learning corpus; not the Peoples Daily classification test set.",
+  "source_split_note": "val belongs to the upstream CNews benchmark, not to this HW2 classification split.",
+  "seed": 42,
+  "available_after_filters": {
+    "体育": 492,
+    "时政": 484,
+    "财经": 494
+  },
+  "selected_documents": 600,
+  "selected_sampling_groups": {
+    "体育": 200,
+    "时政": 200,
+    "财经": 200
+  },
+  "preparation_version": 3,
+  "revision_reason": "v1 and v2 spot checks found many electronics promotions in technology; v3 excludes that upstream category entirely. Uses sports, politics and finance only, 200 each. Old outputs preserved.",
+  "total_tokens": 240989,
+  "vocabulary_size_before_gensim_filtering": 23743,
+  "jieba_version": "0.42.1",
+  "skipped_counts": {
+    "length_or_language": 30,
+    "outside_selected_source_groups": 3500
+  },
+  "overlap_check": "All eligible candidates checked for normalized full-text equality and five sampled 64-character fragments against all 3132 Peoples Daily article groups. Matching candidates excluded. Not exhaustive near-duplicate checking.",
+  "quality_limit": "Heuristic cleanup plus spot checks; not a fully manually cleaned corpus. Some boilerplate and promotion text may remain.",
+  "selected_provenance": [
+    {
+      "external_id": "cnews-val-00334",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00058",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00013",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00386",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00144",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00129",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00118",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00072",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00384",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00053",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00353",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00497",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00465",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00285",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00045",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00308",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00220",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00017",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00016",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00048",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00115",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00123",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00262",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00314",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00014",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00293",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00105",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00373",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00339",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00366",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00487",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00218",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00116",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00233",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00307",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00146",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00423",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00454",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00004",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00395",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00421",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00082",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00364",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00484",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00178",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00488",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00080",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00114",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00398",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00176",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00491",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00481",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00198",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00050",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00187",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00442",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00180",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00315",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00139",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00422",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00023",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00380",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00239",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00278",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00064",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00197",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00041",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00288",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00154",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00327",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00322",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00189",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00301",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00102",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00367",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00036",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00024",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00345",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00120",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00403",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00152",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00434",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00479",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00052",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00448",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00455",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00236",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00331",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00190",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00084",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00193",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00185",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00111",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00350",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00140",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00471",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00356",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00338",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00037",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00317",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00413",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00091",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00277",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00439",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00495",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00411",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00240",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00416",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00142",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00500",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00359",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00291",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00468",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00357",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00170",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00029",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00121",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00483",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00165",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00209",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00141",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00034",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00112",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00296",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00374",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00461",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00376",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00342",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00259",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00206",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00336",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00238",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00074",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00445",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00493",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00130",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00475",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00279",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00138",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00305",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00223",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00304",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00208",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00429",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00489",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00071",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00264",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00256",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00047",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00025",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00057",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00079",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00431",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00459",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00457",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00311",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00033",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00201",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00199",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00343",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00243",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00274",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00132",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00289",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00006",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00059",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00437",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00406",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00456",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00499",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00432",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00226",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00081",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00414",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00002",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00360",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00260",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00095",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00263",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00055",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00156",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00319",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00474",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00347",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00195",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00083",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00280",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00275",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00001",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00169",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00254",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00010",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00328",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00355",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00161",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00126",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00030",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00127",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00375",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-00419",
+      "source_category_for_sampling_only": "体育"
+    },
+    {
+      "external_id": "cnews-val-03045",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03385",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03257",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03431",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03037",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03401",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03281",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03404",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03067",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03068",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03348",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03252",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03290",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03087",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03142",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03279",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03462",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03320",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03225",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03111",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03285",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03397",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03384",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03364",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03105",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03376",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03166",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03213",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03354",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03343",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03200",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03233",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03273",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03240",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03064",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03130",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03118",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03034",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03182",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03011",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03311",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03292",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03120",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03459",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03115",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03004",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03038",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03373",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03334",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03032",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03456",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03036",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03018",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03178",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03452",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03272",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03124",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03149",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03353",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03498",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03112",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03479",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03070",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03381",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03301",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03305",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03251",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03128",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03415",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03497",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03427",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03217",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03100",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03050",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03051",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03490",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03229",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03190",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03481",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03219",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03248",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03477",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03029",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03355",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03345",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03341",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03052",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03033",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03215",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03383",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03461",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03057",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03132",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03101",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03425",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03283",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03238",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03074",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03419",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03096",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03441",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03245",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03403",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03040",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03235",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03488",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03411",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03027",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03344",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03437",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03008",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03049",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03442",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03088",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03426",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03439",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03255",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03438",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03214",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03449",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03487",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03203",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03002",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03208",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03485",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03241",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03153",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03396",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03293",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03349",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03258",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03082",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03495",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03158",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03114",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03031",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03306",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03286",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03409",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03167",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03359",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03387",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03309",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03253",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03266",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03280",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03083",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03471",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03269",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03043",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03098",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03496",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03314",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03447",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03123",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03407",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03465",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03300",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03464",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03358",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03342",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03022",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03327",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03413",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03223",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03308",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03298",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03276",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03168",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03138",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03107",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03414",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03126",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03370",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03211",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03436",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03160",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03243",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03325",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03039",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03005",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03316",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03297",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03053",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03450",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03284",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03377",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03268",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03482",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03318",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03187",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03470",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03129",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03198",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03152",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03422",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03468",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03287",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03161",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-03484",
+      "source_category_for_sampling_only": "时政"
+    },
+    {
+      "external_id": "cnews-val-04505",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04846",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04925",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04787",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04655",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04984",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04844",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04555",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04987",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04956",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04570",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04637",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04561",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04962",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04556",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04885",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04997",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04581",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04641",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04646",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04813",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04609",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04872",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04678",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04606",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04856",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04829",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04943",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04989",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04762",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04754",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04630",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04940",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04527",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04548",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04974",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04719",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04931",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04643",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04523",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04502",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04672",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04900",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04568",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04831",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04636",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04584",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04884",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04729",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04786",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04866",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04721",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04791",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-05000",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04559",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04539",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04858",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04578",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04783",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04519",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04934",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04692",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04802",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04951",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04577",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04723",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04567",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04522",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04659",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04689",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04914",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04521",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04686",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04979",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04854",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04629",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04999",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04553",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04684",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04906",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04790",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04711",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04822",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04889",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04983",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04623",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04585",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04592",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04714",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04513",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04593",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04882",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04959",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04907",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04713",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04847",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04881",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04998",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04638",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04583",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04864",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04557",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04698",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04520",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04743",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04615",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04604",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04738",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04682",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04658",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04618",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04616",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04911",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04842",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04600",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04707",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04670",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04644",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04536",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04904",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04891",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04833",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04764",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04883",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04852",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04778",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04671",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04515",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04988",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04635",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04910",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04801",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04972",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04896",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04898",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04809",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04725",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04679",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04662",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04726",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04814",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04765",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04870",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04700",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04799",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04599",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04632",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04961",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04859",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04501",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04770",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04779",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04602",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04963",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04935",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04880",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04978",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04824",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04860",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04565",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04996",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04763",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04660",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04712",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04669",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04709",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04653",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04995",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04968",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04953",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04718",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04697",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04591",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04820",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04795",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04656",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04710",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04784",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04849",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04657",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04648",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04927",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04994",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04800",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04666",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04741",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04952",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04811",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04611",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04857",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04745",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04588",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04544",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04647",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04767",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04673",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04966",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04622",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04836",
+      "source_category_for_sampling_only": "财经"
+    },
+    {
+      "external_id": "cnews-val-04617",
+      "source_category_for_sampling_only": "财经"
+    }
+  ],
+  "output_sha256": "5c3ea7969fb29a4442979d04861e53e725a5e8154d47aecbed410f0d45e98c77",
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

@@ -1,0 +1,15 @@
+{
+  "note": "Expected input checksums from the original migration. Raw corpus and cleaned text are not distributed. The reference cleaner rebuilds the cleaned January file.",
+  "files": [
+    {
+      "destination": "data/raw/1998-01-2003版-带音.txt",
+      "bytes": 5320005,
+      "sha256": "37b85555df2f72642ff9815ac01f51d4f50024d80ca0e2e8a6be6f93b1038639"
+    },
+    {
+      "destination": "data/processed/1998-01.paragraphs.jsonl",
+      "bytes": 11849457,
+      "sha256": "c8f3b7c4c6d3e84a8deafade57dd4ef7985ec66de2cebf7a01aa1eab315f9c39"
+    }
+  ]
+}

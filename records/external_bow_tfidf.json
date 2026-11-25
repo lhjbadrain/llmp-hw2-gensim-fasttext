@@ -1,0 +1,103 @@
+{
+  "purpose": "External corpus representation demonstration; no classification or test-set evaluation.",
+  "gensim_version": "4.4.0",
+  "source_sha256": "5c3ea7969fb29a4442979d04861e53e725a5e8154d47aecbed410f0d45e98c77",
+  "documents": 600,
+  "dictionary_size_before": 23743,
+  "dictionary_size_after": 6968,
+  "dictionary_filter": {
+    "no_below": 3,
+    "no_above": 0.8,
+    "keep_n": 20000
+  },
+  "empty_documents_after_filtering": 0,
+  "example_id": "cnews-val-00471",
+  "example_preview": "31分大胜广东全场无暂停 李春江:这才是真实水平“上半时的进攻和防守,这才是你们水平的真正体现。”中场休息时,主教练李春江对球队上半场的表现非常满意,半场结束时",
+  "bow_top": [
+    {
+      "word": "了",
+      "count": 7
+    },
+    {
+      "word": "分",
+      "count": 5
+    },
+    {
+      "word": "球队",
+      "count": 5
+    },
+    {
+      "word": "防守",
+      "count": 5
+    },
+    {
+      "word": "和",
+      "count": 4
+    },
+    {
+      "word": "宏远",
+      "count": 4
+    },
+    {
+      "word": "对",
+      "count": 4
+    },
+    {
+      "word": "得",
+      "count": 4
+    }
+  ],
+  "tfidf_top": [
+    {
+      "word": "宏远",
+      "weight": 0.36175445072186524,
+      "count": 4,
+      "document_frequency": 4
+    },
+    {
+      "word": "轻松",
+      "weight": 0.2074940371470287,
+      "count": 3,
+      "document_frequency": 13
+    },
+    {
+      "word": "极其",
+      "weight": 0.19126216299797655,
+      "count": 2,
+      "document_frequency": 3
+    },
+    {
+      "word": "防守",
+      "weight": 0.1807171623548817,
+      "count": 5,
+      "document_frequency": 81
+    },
+    {
+      "word": "福建",
+      "weight": 0.16067584468786805,
+      "count": 2,
+      "document_frequency": 7
+    },
+    {
+      "word": "广东",
+      "weight": 0.15585554019974,
+      "count": 2,
+      "document_frequency": 8
+    },
+    {
+      "word": "主教练",
+      "weight": 0.15386593639600307,
+      "count": 3,
+      "document_frequency": 35
+    },
+    {
+      "word": "这才",
+      "weight": 0.1478003567649259,
+      "count": 2,
+      "document_frequency": 10
+    }
+  ],
+  "tfidf_note": "Gensim default local raw term count and global log2(N/df), followed by unit L2 normalization.",
+  "elapsed_seconds": 0.275911399978213,
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

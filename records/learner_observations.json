@@ -1,0 +1,9 @@
+{
+  "user_original": "FastText遇到未登录词时会根据该词的子词进行向量处理，得到一个新向量这个新向量的语义大概为未登录词。因为可能语料过少或者子词组合后本来就不能准确表示未登录词的词义。",
+  "assistant_clarification": "FastText利用已经学习的字符子词向量构造未登录词表示；能返回向量并不保证语义正确。语料规模、子词学习质量和组合方式都可能影响结果。",
+  "attribution_note": "仅原话是学习者本人表述；澄清为助手建议，不冒称学习者独立研究结论。",
+  "reading_scope": "已讨论FastTextKeyedVectors.get_vector的OOV分支与文章平均汇聚的区别。后续源码路径为补充对照材料，未声称掌握全部训练内核。",
+  "classification_observation_user_original": "让我意外的是tf-idf的表现优于fasttext的，其实这也是在情理之中，因为我的训练集与验证集的数据过少，很难发挥出fasttext的优势。",
+  "classification_observation_assistant_refinement": "本次小样本实验中TF-IDF表现优于FastText平均向量。分类训练集、测试集和外部词向量语料较小，可能限制FastText表现；还可能受均值汇聚、分词、子词桶设置与题材覆盖影响。未做扩大数据等对照实验，不能确定原因。本次没有另设验证集，也没有根据测试成绩调参。",
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

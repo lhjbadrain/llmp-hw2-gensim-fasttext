@@ -1,0 +1,137 @@
+{
+  "purpose": "Gensim unsupervised FastText word vectors and subword OOV experiment; not official fastText supervised classification.",
+  "source_sha256": "5c3ea7969fb29a4442979d04861e53e725a5e8154d47aecbed410f0d45e98c77",
+  "documents": 600,
+  "parameters": {
+    "vector_size": 64,
+    "window": 5,
+    "min_count": 3,
+    "sg": 1,
+    "negative": 5,
+    "hs": 0,
+    "sample": 0.001,
+    "epochs": 5,
+    "workers": 1,
+    "seed": 42,
+    "sorted_vocab": 1,
+    "min_n": 2,
+    "max_n": 4,
+    "bucket": 20000
+  },
+  "vocabulary_size": 8787,
+  "build_and_train_seconds": 3.4389079000102356,
+  "queries_and_neighbors": {
+    "球队": [
+      {
+        "word": "梯队",
+        "cosine_similarity": 0.9614748358726501
+      },
+      {
+        "word": "掘金队",
+        "cosine_similarity": 0.9476403594017029
+      },
+      {
+        "word": "湖人队",
+        "cosine_similarity": 0.9456890821456909
+      },
+      {
+        "word": "球迷",
+        "cosine_similarity": 0.9430105090141296
+      },
+      {
+        "word": "黄蜂队",
+        "cosine_similarity": 0.940010666847229
+      }
+    ],
+    "基金": [
+      {
+        "word": "海外基金",
+        "cosine_similarity": 0.9208885431289673
+      },
+      {
+        "word": "博时基金",
+        "cosine_similarity": 0.9165509939193726
+      },
+      {
+        "word": "广发基金",
+        "cosine_similarity": 0.9006152749061584
+      },
+      {
+        "word": "货币基金",
+        "cosine_similarity": 0.8917590975761414
+      },
+      {
+        "word": "基金法",
+        "cosine_similarity": 0.8875454068183899
+      }
+    ],
+    "经济": [
+      {
+        "word": "宏观经济",
+        "cosine_similarity": 0.9406970739364624
+      },
+      {
+        "word": "经济周期",
+        "cosine_similarity": 0.9166431427001953
+      },
+      {
+        "word": "经济危机",
+        "cosine_similarity": 0.9075940251350403
+      },
+      {
+        "word": "经济指标",
+        "cosine_similarity": 0.8968295454978943
+      },
+      {
+        "word": "经济社会",
+        "cosine_similarity": 0.8965516090393066
+      }
+    ]
+  },
+  "oov_example": {
+    "word": "球队管理员",
+    "appeared_as_whole_token_in_training": false,
+    "in_fasttext_word_vocabulary": false,
+    "word2vec_lookup": "KeyError: word not in Word2Vec vocabulary",
+    "fasttext_vector_dimensions": 64,
+    "fasttext_vector_first5": [
+      -0.05955270305275917,
+      0.008001450449228287,
+      0.23326139152050018,
+      0.271441787481308,
+      0.04171087220311165
+    ],
+    "fasttext_neighbors": [
+      {
+        "word": "残疾人",
+        "cosine_similarity": 0.9704346656799316
+      },
+      {
+        "word": "按钮",
+        "cosine_similarity": 0.9702882170677185
+      },
+      {
+        "word": "讲话",
+        "cosine_similarity": 0.970158576965332
+      },
+      {
+        "word": "现正",
+        "cosine_similarity": 0.9674363136291504
+      },
+      {
+        "word": "醉酒",
+        "cosine_similarity": 0.967401385307312
+      }
+    ]
+  },
+  "gensim_version": "4.4.0",
+  "python_version": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+  "pythonhashseed": "42",
+  "limitations": [
+    "Small corpus and reduced bucket size; hash collisions and limited contexts may affect quality.",
+    "OOV vector availability does not prove semantic accuracy.",
+    "Neighbor comparisons are exploratory; similarity numbers are not classification accuracy.",
+    "Whole articles are training sequences; context windows may cross sentence boundaries."
+  ],
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

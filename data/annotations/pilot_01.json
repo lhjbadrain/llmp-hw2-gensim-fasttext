@@ -1,0 +1,52 @@
+{
+  "purpose": "主题标注规则试验；用户已确认本批标签，尚未划分训练和测试集。",
+  "source_sha256": "c8f3b7c4c6d3e84a8deafade57dd4ef7985ec66de2cebf7a01aa1eab315f9c39",
+  "selection": "人工选取的教学与边界样例，不是随机评测集；版面或关键词不产生主题标签。",
+  "items": [
+    {
+      "sample_id": "A",
+      "article_id": "19980101-03-002",
+      "source_lines": [
+        155,
+        156,
+        157,
+        159,
+        160
+      ],
+      "label": "国际",
+      "review_status": "user_confirmed",
+      "label_source": "用户在当前聊天逐项确认；其它统一写作其他",
+      "source_text_sha256": "91e0453b2e43ae1a440db7f01df4ecdbb7b7da4e95fa915d169aa8ed35a94394"
+    },
+    {
+      "sample_id": "B",
+      "article_id": "19980109-08-008",
+      "source_lines": [
+        5832
+      ],
+      "label": "体育",
+      "review_status": "user_confirmed",
+      "label_source": "用户在当前聊天逐项确认；其它统一写作其他",
+      "source_text_sha256": "26918b8470434210cee444e49fa5f3f137f6db182f490bbe72bad55c28bb2573"
+    },
+    {
+      "sample_id": "C",
+      "article_id": "19980105-05-001",
+      "source_lines": [
+        1761,
+        1762,
+        1763,
+        1764,
+        1765,
+        1766,
+        1767,
+        1768
+      ],
+      "label": "其他",
+      "review_status": "user_confirmed",
+      "label_source": "用户在当前聊天逐项确认；其它统一写作其他",
+      "source_text_sha256": "34bda5611530992ae3d57a1c81a96a1dc2d8585cde5519a181f9f73c3d766658"
+    }
+  ],
+  "publication_note": "Metadata only; article text and tokens intentionally omitted. corpus_io restores them from the separately obtained January source and verifies source_text_sha256."
+}

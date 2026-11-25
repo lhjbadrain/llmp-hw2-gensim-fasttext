@@ -1,0 +1,94 @@
+{
+  "purpose": "Fixed small curated Peoples Daily theme classification split; not a representative January benchmark.",
+  "seed": 42,
+  "sampling_attempts_until_group_constraints_met": 2,
+  "split_rule": "Per-class fixed five test examples from the newly adopted batch. Reject group-overlapping draws without fitting or scoring any model. Earlier rule-discussion and vector-demo samples forced into training.",
+  "train_counts": {
+    "国际": 15,
+    "体育": 15
+  },
+  "test_counts": {
+    "国际": 5,
+    "体育": 5
+  },
+  "train_article_ids": [
+    "19980101-03-002",
+    "19980101-03-008",
+    "19980105-06-004",
+    "19980105-06-014",
+    "19980105-06-017",
+    "19980106-01-006",
+    "19980106-05-011",
+    "19980106-06-002",
+    "19980107-06-016",
+    "19980109-06-003",
+    "19980109-06-016",
+    "19980109-08-008",
+    "19980113-06-011",
+    "19980114-08-005",
+    "19980114-08-009",
+    "19980116-08-008",
+    "19980119-06-014",
+    "19980119-08-008",
+    "19980119-08-009",
+    "19980121-08-003",
+    "19980122-06-011",
+    "19980122-08-001",
+    "19980122-08-007",
+    "19980123-06-012",
+    "19980123-08-007",
+    "19980123-08-009",
+    "19980126-06-006",
+    "19980126-08-002",
+    "19980126-08-010",
+    "19980127-08-008"
+  ],
+  "test_article_ids": [
+    "19980105-06-011",
+    "19980108-08-001",
+    "19980114-08-003",
+    "19980114-08-008",
+    "19980115-06-012",
+    "19980119-06-012",
+    "19980119-06-019",
+    "19980119-08-005",
+    "19980120-06-002",
+    "19980126-08-004"
+  ],
+  "forced_training_ids": [
+    "19980101-03-002",
+    "19980101-03-008",
+    "19980106-01-006",
+    "19980106-05-011",
+    "19980109-06-003",
+    "19980109-08-008",
+    "19980119-06-014",
+    "19980123-08-009",
+    "19980126-08-002",
+    "19980127-08-008"
+  ],
+  "checks": {
+    "article_id_overlap": 0,
+    "normalized_text_overlap": 0,
+    "identified_group_overlap": 0,
+    "early_calibration_in_test": 0
+  },
+  "feature_policy": "Only normalized正文tokens used for features. Label, ID, page, event group, annotation rationale and source file are metadata only. Future TF-IDF fits only train tokens; frozen external FastText does not train on this test data.",
+  "source_sha256": "c8f3b7c4c6d3e84a8deafade57dd4ef7985ec66de2cebf7a01aa1eab315f9c39",
+  "annotation_sha256": {
+    "pilot_01.json": "3a39a542a77dd56dbf9b4a1adca7dcd365a598cc1c4f4d23b0a19d79da8053ff",
+    "pilot_02.json": "3c85df481dc42424a0df403d57875e32fca05f87739e891842c2b7cd5d0cc31c",
+    "annotation_queue_01.json": "c8cda5bd384faca6dcbe8c64bee879d5c3f5cfdd79dfa94b65a4d3b7b5e68204",
+    "assistant_batch02.json": "53712c9796ab1af81ac5a0aa7129a133daf6ee2b8115d67e89ea44ed90413f53"
+  },
+  "output_sha256": {
+    "train": "ace0c9fc80c7d5ceaaf2dbd76cad864f41bb02157a759942934db07ac8845ccf",
+    "test": "b5eb9c8b035ec37fb07c5e33cfd51b124128e1b5ed8b44d08d7f7c936895cdc6"
+  },
+  "limitations": [
+    "40 curated articles, 10 test articles; one error changes accuracy by 10 percentage points.",
+    "Themes partly AI-assisted and accepted by user, not independently double-annotated gold labels.",
+    "Known groups and exact normalized duplicates controlled, not exhaustive near-duplicate or same-event discovery."
+  ],
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

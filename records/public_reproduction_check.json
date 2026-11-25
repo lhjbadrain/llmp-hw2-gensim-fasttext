@@ -1,0 +1,42 @@
+{
+  "scope": "Metadata-only public code re-run end-to-end in a separate local directory with separately supplied raw inputs and same locked environment. No corpus or trained model in the public repository.",
+  "checks": {
+    "binary_split_match": true,
+    "binary_TF-IDF_predictions_match": true,
+    "binary_TF-IDF_metrics_match": true,
+    "binary_FastText平均向量_predictions_match": true,
+    "binary_FastText平均向量_metrics_match": true,
+    "fourclass_split_match": true,
+    "fourclass_TF-IDF_predictions_match": true,
+    "fourclass_TF-IDF_metrics_match": true,
+    "fourclass_FastText平均向量_predictions_match": true,
+    "fourclass_FastText平均向量_metrics_match": true
+  },
+  "scores": [
+    {
+      "task": "binary",
+      "representation": "TF-IDF",
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "task": "binary",
+      "representation": "FastText平均向量",
+      "accuracy": 0.9,
+      "macro_f1": 0.898989898989899
+    },
+    {
+      "task": "fourclass",
+      "representation": "TF-IDF",
+      "accuracy": 0.9,
+      "macro_f1": 0.8999999999999999
+    },
+    {
+      "task": "fourclass",
+      "representation": "FastText平均向量",
+      "accuracy": 0.8,
+      "macro_f1": 0.7833333333333334
+    }
+  ],
+  "note": "The public version restores article text by ID and source_text_sha256 from local January corpus; published record files have text and local paths removed. Timing values in historical records remain original user-run measurements."
+}

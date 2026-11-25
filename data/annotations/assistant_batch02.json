@@ -1,0 +1,769 @@
+{
+  "purpose": "用户已集中采纳的AI辅助主题标签；不是独立人工金标准。",
+  "guideline_version": "v1",
+  "source_sha256": "c8f3b7c4c6d3e84a8deafade57dd4ef7985ec66de2cebf7a01aa1eab315f9c39",
+  "selection": "初始30篇：06/08版各15篇，全文120—420字符，seed20261125；补充9篇：先以版面和标题线索寻找候选，再逐篇阅读全文判断，全文120—500字符，seed20261126。排除先前19篇。受限小样本，不代表全月文章分布。",
+  "counts": {
+    "其他": 5,
+    "国际": 15,
+    "交叉": 4,
+    "体育": 15
+  },
+  "leakage_control": "词、主题及ID筛选仅用于寻找待人工判断的候选；类别由全文人工/AI判读。分类特征不得包括版面、编号、标签或标注理由。已发现同事件的08/13、04/17记录共享event_group，后续不跨训练测试。",
+  "items": [
+    {
+      "article_id": "19980115-06-015",
+      "source_lines": [
+        10770
+      ],
+      "sample_id": "B02-01",
+      "proposed_label": "其他",
+      "rationale": "纽约运钞抢劫案，主线为治安犯罪，非国际政治外交。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980115-06-015",
+      "needs_boundary_review": false,
+      "label": "其他",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "28245696308da29df25e7979386eb899564bda16bc9d74ee66c08eca914c8866"
+    },
+    {
+      "article_id": "19980115-06-016",
+      "source_lines": [
+        10772
+      ],
+      "sample_id": "B02-02",
+      "proposed_label": "其他",
+      "rationale": "阿富汗客机失事及天气原因，主线为空难事故。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980115-06-016",
+      "needs_boundary_review": false,
+      "label": "其他",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "730c6e12743668ecfbe1c963e9f87d8dbca25e2424ab7449b4479b0b8654d48a"
+    },
+    {
+      "article_id": "19980105-06-014",
+      "source_lines": [
+        1941
+      ],
+      "sample_id": "B02-03",
+      "proposed_label": "国际",
+      "rationale": "美国与巴以领导人就撤军及和平进程安排会谈。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980105-06-014",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "117e3f8cd33beb4aafacfd2a8fecee37d243d62bc5a867c62a30702e94017a47"
+    },
+    {
+      "article_id": "19980105-08-004",
+      "source_lines": [
+        2037,
+        2038
+      ],
+      "sample_id": "B02-04",
+      "proposed_label": "交叉",
+      "rationale": "走钢丝绝技表演，处于杂技与民族体育边界；暂不强归类。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "adli_beijing_tightrope_199801",
+      "needs_boundary_review": true,
+      "label": "交叉",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "e31aa8be99ff57f648af0d0c324bd89f64242e536f838d7b88dd7d2fee0a8a84"
+    },
+    {
+      "article_id": "19980109-06-016",
+      "source_lines": [
+        5700
+      ],
+      "sample_id": "B02-05",
+      "proposed_label": "国际",
+      "rationale": "墨西哥州长辞职与接任，涉及政治问责及恢复政府与游击队和谈。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980109-06-016",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "69f0dff13cdd41cce661f99e25157868bf62b9d27b92d07a3ff08b33d6976b1d"
+    },
+    {
+      "article_id": "19980122-08-007",
+      "source_lines": [
+        16531,
+        16532,
+        16533
+      ],
+      "sample_id": "B02-06",
+      "proposed_label": "体育",
+      "rationale": "亚洲足球俱乐部冠军杯赛程与球队备战。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980122-08-007",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "0f6f54c5cf8417c35491b9bc03f25b68c6893c235d67aaec30e1441f40ff933e"
+    },
+    {
+      "article_id": "19980122-06-011",
+      "source_lines": [
+        16395,
+        16396,
+        16398
+      ],
+      "sample_id": "B02-07",
+      "proposed_label": "国际",
+      "rationale": "捷克总统选举与连任。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980122-06-011",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "2a509e03ea61a27e81cf92dea36d4ff023c731599acc6763d35664a7feffa4f3"
+    },
+    {
+      "article_id": "19980115-06-012",
+      "source_lines": [
+        10757,
+        10758,
+        10759
+      ],
+      "sample_id": "B02-08",
+      "proposed_label": "国际",
+      "rationale": "外国领导人向中国领导人致慰问电函，属于外交往来。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "zhangjiakou_earthquake_foreign_condolences_199801",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "ec6470e7c9181f84648bf01e5a073f016ddf0be978de748d5ea8e6730fcb0466"
+    },
+    {
+      "article_id": "19980125-08-003",
+      "source_lines": [
+        19520,
+        19521,
+        19522
+      ],
+      "sample_id": "B02-09",
+      "proposed_label": "交叉",
+      "rationale": "人体连续旋转吉尼斯纪录表演，体育与文娱边界待定。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980125-08-003",
+      "needs_boundary_review": true,
+      "label": "交叉",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "7f2e636b3ebfac4770022baf5ea8d42e6496a79b584d856903c82b14e192363e"
+    },
+    {
+      "article_id": "19980123-08-007",
+      "source_lines": [
+        17368,
+        17369,
+        17370
+      ],
+      "sample_id": "B02-10",
+      "proposed_label": "体育",
+      "rationale": "围棋赛事首轮赛果与后续对阵。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980123-08-007",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "c64d5d4e1a4268aacc4e1567ec5f13d1a2303b89fe339781f922dcb6f2d5a3ce"
+    },
+    {
+      "article_id": "19980123-06-012",
+      "source_lines": [
+        17263,
+        17264,
+        17265,
+        17266
+      ],
+      "sample_id": "B02-11",
+      "proposed_label": "国际",
+      "rationale": "军机迫降、安哥拉领空及联合国禁飞区，主线为政治军事与和平协议。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980123-06-012",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "73ac09ff14b8a0b24c5513a31134728bc93e4593423362610911071fa3df9217"
+    },
+    {
+      "article_id": "19980119-08-009",
+      "source_lines": [
+        13585,
+        13586,
+        13587,
+        13588
+      ],
+      "sample_id": "B02-12",
+      "proposed_label": "体育",
+      "rationale": "全国男篮甲A联赛赛况及比分。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980119-08-009",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "d52d0b7fe6d5596cb4186c2f259562f46893cc1326bfeb30bfb0e597fe8dfc72"
+    },
+    {
+      "article_id": "19980120-06-002",
+      "source_lines": [
+        14364,
+        14365,
+        14366,
+        14367,
+        14368,
+        14369
+      ],
+      "sample_id": "B02-13",
+      "proposed_label": "国际",
+      "rationale": "外国领导人就中国地震致慰问电，属于外交往来。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "zhangjiakou_earthquake_foreign_condolences_199801",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "96ea10c4612eb985b732fdadcfe1e2c895344ba50b7690a4ab3b9dafeef8c48e"
+    },
+    {
+      "article_id": "19980125-06-003",
+      "source_lines": [
+        19335,
+        19336,
+        19337,
+        19338,
+        19339
+      ],
+      "sample_id": "B02-14",
+      "proposed_label": "其他",
+      "rationale": "亚洲金融危机对贸易和就业的影响，主线为经济，留作未来经济类候选。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980125-06-003",
+      "needs_boundary_review": false,
+      "label": "其他",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "13738bc08de4c509f5a6f37c97c179e9486e36565c8c02ed6a254840a35c67bc"
+    },
+    {
+      "article_id": "19980114-08-008",
+      "source_lines": [
+        9924,
+        9925,
+        9926,
+        9927
+      ],
+      "sample_id": "B02-15",
+      "proposed_label": "体育",
+      "rationale": "赞助商倒闭后橄榄球赛仍按期举办，主线为赛事组织。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980114-08-008",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "aed96f4caedf255981d2eb0650fdcdb1381f2c73fe732217a8523f96f982b841"
+    },
+    {
+      "article_id": "19980113-06-011",
+      "source_lines": [
+        8667,
+        8668,
+        8669
+      ],
+      "sample_id": "B02-16",
+      "proposed_label": "国际",
+      "rationale": "韩国与斯里兰卡领导人会见中国代表，主线为外交往来。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980113-06-011",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "ca22ba578382dd7f47c5a6e112a8511fe8e242dad38c5fefc8d982eab44051ff"
+    },
+    {
+      "article_id": "19980122-08-001",
+      "source_lines": [
+        16487,
+        16488,
+        16489,
+        16490,
+        16491
+      ],
+      "sample_id": "B02-17",
+      "proposed_label": "体育",
+      "rationale": "文章明确将走钢丝表演置于民族体育活动中，报道试走过程。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "adli_beijing_tightrope_199801",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "0faf642a29086df7bcb7ba228ed71bf4b18d96397683312da4ff2c6c6a6e43b7"
+    },
+    {
+      "article_id": "19980126-06-006",
+      "source_lines": [
+        20433,
+        20434,
+        20435
+      ],
+      "sample_id": "B02-18",
+      "proposed_label": "国际",
+      "rationale": "朝鲜报纸批评美国制裁政策，主线为国际政治外交。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980126-06-006",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "b90102eff90a724d12908662fff5f32a7cce0cf230c0c8e44d3c578871ec2ee0"
+    },
+    {
+      "article_id": "19980120-08-010",
+      "source_lines": [
+        14602,
+        14603
+      ],
+      "sample_id": "B02-19",
+      "proposed_label": "交叉",
+      "rationale": "企业向冬奥采访记者团赠衣，赞助与体育背景交叉，暂不作为明确体育样本。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980120-08-010",
+      "needs_boundary_review": true,
+      "label": "交叉",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "9a5fbe3ddd110fc6df5f3bc56e434216aed4560310d3dcfbcc1430d5f2028340"
+    },
+    {
+      "article_id": "19980106-06-002",
+      "source_lines": [
+        2891,
+        2892,
+        2893,
+        2894,
+        2895,
+        2896
+      ],
+      "sample_id": "B02-20",
+      "proposed_label": "国际",
+      "rationale": "肯尼亚总统选举结果、宣誓就职及选举制度。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980106-06-002",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "9943eb587653494ee975e81e13d9564656c7c5069abd139dfd99435e045612f0"
+    },
+    {
+      "article_id": "19980105-06-017",
+      "source_lines": [
+        1947
+      ],
+      "sample_id": "B02-21",
+      "proposed_label": "国际",
+      "rationale": "越南国防部高层授衔任命，属于外国政治军事组织事务。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980105-06-017",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "6836673b8c2f20ae779421e45302f4b1dfa898286d6f0dbc1bc2e0682205eb67"
+    },
+    {
+      "article_id": "19980117-08-006",
+      "source_lines": [
+        12471,
+        12472
+      ],
+      "sample_id": "B02-22",
+      "proposed_label": "其他",
+      "rationale": "湖北村干部接受村民信任投票，属于国内基层治理。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980117-08-006",
+      "needs_boundary_review": false,
+      "label": "其他",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "72fe066760257bf53b2310f05957b417350f7ab748ccf24b2327571d95da3245"
+    },
+    {
+      "article_id": "19980119-08-008",
+      "source_lines": [
+        13580,
+        13581,
+        13582,
+        13583
+      ],
+      "sample_id": "B02-23",
+      "proposed_label": "体育",
+      "rationale": "全国排球联赛第四轮战绩及排名。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980119-08-008",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "83a8b7cc57b82aecbbb7d74e1467f24f4e68fac9ddcb4c04d10cb797001e7f31"
+    },
+    {
+      "article_id": "19980121-08-003",
+      "source_lines": [
+        15541,
+        15542,
+        15543,
+        15544
+      ],
+      "sample_id": "B02-24",
+      "proposed_label": "体育",
+      "rationale": "北京市春节全民健身及群众体育活动安排。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980121-08-003",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "6a2ac4ab92134119716db600e7d79329e7f7ca3843a7417a937a12a1b76e2a74"
+    },
+    {
+      "article_id": "19980113-08-007",
+      "source_lines": [
+        8804,
+        8805,
+        8806,
+        8807
+      ],
+      "sample_id": "B02-25",
+      "proposed_label": "交叉",
+      "rationale": "饭店组织记者健身联谊并转交公益捐款，体育与企业公关、公益交叉。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980113-08-007",
+      "needs_boundary_review": true,
+      "label": "交叉",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "3be73f7391c733b71f86ad5f9ab690e77f0844ab8f6fad59b8cd38f7d6b68db2"
+    },
+    {
+      "article_id": "19980114-08-003",
+      "source_lines": [
+        9896,
+        9897,
+        9898,
+        9899
+      ],
+      "sample_id": "B02-26",
+      "proposed_label": "体育",
+      "rationale": "跳水运动员因病退出世锦赛，主线为运动员参赛情况。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980114-08-003",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "a3d2121849cbaf8c6ab40bae348367e754a502a0272d343a8466a39d4c9229e3"
+    },
+    {
+      "article_id": "19980105-06-004",
+      "source_lines": [
+        1877,
+        1878,
+        1879,
+        1880
+      ],
+      "sample_id": "B02-27",
+      "proposed_label": "国际",
+      "rationale": "驻外外交官遇袭，报道涉及使馆安全及对双边关系的影响；与普通治安新闻有边界，建议复核。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980105-06-004",
+      "needs_boundary_review": true,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "65baf6c4c5b3a069004fe289f7b581d7ae354cb412faf0e2957b23ce7a0f4ac6"
+    },
+    {
+      "article_id": "19980107-06-016",
+      "source_lines": [
+        3964
+      ],
+      "sample_id": "B02-28",
+      "proposed_label": "国际",
+      "rationale": "意大利与欧洲国家协调库尔德难民政策，属于国际政治合作。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980107-06-016",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "80b9e4b1d68a04c2712f0cbb1cd804ba55398d78502a80ad2821deb7212d7efb"
+    },
+    {
+      "article_id": "19980114-08-009",
+      "source_lines": [
+        9929,
+        9930
+      ],
+      "sample_id": "B02-29",
+      "proposed_label": "体育",
+      "rationale": "罗纳尔多获国际足联最佳球员，主线为足球奖项。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980114-08-009",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "aea78a6beb7aef14da34ef892cdc6e933f15bd0f11fd500f02f89b8295fbbed3"
+    },
+    {
+      "article_id": "19980109-08-010",
+      "source_lines": [
+        5836
+      ],
+      "sample_id": "B02-30",
+      "proposed_label": "其他",
+      "rationale": "体育品牌赞助芭蕾舞剧晚会，实际活动是文艺演出，不因品牌和体育官员出席归体育。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980109-08-010",
+      "needs_boundary_review": false,
+      "label": "其他",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "9a0f97942ed84473fbf4243bba8ce5efa0ae51704243902fc5bf701cc2389009"
+    },
+    {
+      "article_id": "19980119-06-019",
+      "source_lines": [
+        13452
+      ],
+      "sample_id": "B02-31",
+      "proposed_label": "国际",
+      "rationale": "摩洛哥首相阐述对以色列和中东和平进程的立场。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980119-06-019",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "9cc4299b00a3f6bdc4302bff2fd267ee9b26a17896ec0cf59fa770b61505249e"
+    },
+    {
+      "article_id": "19980119-06-012",
+      "source_lines": [
+        13415,
+        13417,
+        13418,
+        13419
+      ],
+      "sample_id": "B02-32",
+      "proposed_label": "国际",
+      "rationale": "波黑塞族共和国政府组建与议会批准总理。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980119-06-012",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "f5cf3fbe45f9362b75f723c4d567beee5908e2e0d3eebb85b5af754be867d1f2"
+    },
+    {
+      "article_id": "19980105-06-011",
+      "source_lines": [
+        1923,
+        1924,
+        1925,
+        1926,
+        1927,
+        1928
+      ],
+      "sample_id": "B02-33",
+      "proposed_label": "国际",
+      "rationale": "日本三个政党成立及政治纲领。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980105-06-011",
+      "needs_boundary_review": false,
+      "label": "国际",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "97616651e0e56e45660c8669ec59ea44b81e1f8be81150c8b215a97562616fd0"
+    },
+    {
+      "article_id": "19980126-08-004",
+      "source_lines": [
+        20543,
+        20544,
+        20545,
+        20546
+      ],
+      "sample_id": "B02-34",
+      "proposed_label": "体育",
+      "rationale": "世界沙滩足球赛半决赛及决赛资格。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980126-08-004",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "b656ae6a304a04c2a8e3e48777bc70cb143e51d666f35fa5ee171dff2d4fe962"
+    },
+    {
+      "article_id": "19980126-08-010",
+      "source_lines": [
+        20582,
+        20583,
+        20584,
+        20585,
+        20586,
+        20587,
+        20588
+      ],
+      "sample_id": "B02-35",
+      "proposed_label": "体育",
+      "rationale": "澳大利亚网球公开赛第四轮赛果。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980126-08-010",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "22875e72bc7ca8580cde216b4b4ad595a7b87a1c060a0cac6fd1dee518a9835e"
+    },
+    {
+      "article_id": "19980108-08-001",
+      "source_lines": [
+        4842,
+        4843,
+        4844,
+        4845
+      ],
+      "sample_id": "B02-36",
+      "proposed_label": "体育",
+      "rationale": "中国围棋天元战赛果与八强对阵。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980108-08-001",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "2526dd608b59aced0d9231bc8b63efb0b5c8a1de7d4b97a64cbbbe4ccf17bca9"
+    },
+    {
+      "article_id": "19980116-08-008",
+      "source_lines": [
+        11589,
+        11590,
+        11591
+      ],
+      "sample_id": "B02-37",
+      "proposed_label": "体育",
+      "rationale": "国际女子网球赛中李芳晋级八强。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980116-08-008",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "c4428ddc1bfde8ea89c1c672435fa6b807ffa1e902546ecf5f8bfcfc91e2bf58"
+    },
+    {
+      "article_id": "19980119-08-005",
+      "source_lines": [
+        13563,
+        13564,
+        13566,
+        13567,
+        13568,
+        13569
+      ],
+      "sample_id": "B02-38",
+      "proposed_label": "体育",
+      "rationale": "日本羽毛球公开赛各项目赛果。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980119-08-005",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "a031f70edde9c2b56996344faaaed5f1b226e2f2edda04f035afac1359827b1a"
+    },
+    {
+      "article_id": "19980114-08-005",
+      "source_lines": [
+        9906,
+        9907,
+        9908,
+        9909
+      ],
+      "sample_id": "B02-39",
+      "proposed_label": "体育",
+      "rationale": "全国国际象棋大奖赛的循环赛及决赛名单。",
+      "review_status": "user_accepted_ai_suggestion",
+      "label_source": "AI逐篇阅读全文提出候选与理由；用户在聊天回复“本批采用”集中采纳。未声称独立人工复标。",
+      "event_group": "19980114-08-005",
+      "needs_boundary_review": false,
+      "label": "体育",
+      "user_independent_relabeling_verified": false,
+      "user_accepted": true,
+      "source_text_sha256": "d718dc8214d0d1aa3ab480eb9c94ea96808e963821bab182a9798e5b75990ae1"
+    }
+  ],
+  "publication_note": "Metadata only; article text and tokens intentionally omitted. corpus_io restores them from the separately obtained January source and verifies source_text_sha256."
+}

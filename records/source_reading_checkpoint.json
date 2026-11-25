@@ -1,0 +1,44 @@
+{
+  "gensim_version": "4.4.0",
+  "paper": "https://aclanthology.org/Q17-1010.pdf",
+  "paper_sections_selected": [
+    "3.1: skipgram with negative sampling",
+    "3.2: character n-grams and hashing",
+    "4.3: paper hyperparameters, not identically reproduced here"
+  ],
+  "source_points": [
+    {
+      "file": ".venv/Lib/site-packages/gensim/models/fasttext.py",
+      "function": "FastText._do_train_job",
+      "lines": [
+        516,
+        539
+      ],
+      "meaning": "sentences iterable training calls train_batch_any"
+    },
+    {
+      "file": ".venv/Lib/site-packages/gensim/models/fasttext_inner.pyx",
+      "lines": [
+        395,
+        397,
+        554,
+        567
+      ],
+      "meaning": "sg/negative parameters select the optimized training path"
+    },
+    {
+      "file": ".venv/Lib/site-packages/gensim/models/fasttext.py",
+      "function": "FastTextKeyedVectors.get_vector",
+      "lines": [
+        1085,
+        1106,
+        1113,
+        1125,
+        1130
+      ],
+      "meaning": "existing-word lookup or hashed subword OOV construction"
+    }
+  ],
+  "scope_note": "Selected mechanism and call-path inspection, not a complete Cython-kernel derivation or reproduction of the original paper experiments.",
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

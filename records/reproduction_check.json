@@ -1,0 +1,107 @@
+{
+  "copy": "PROJECT\\reproduce_run",
+  "scope": "One fresh-directory end-to-end reproducibility check in the same Python environment; not cross-machine verification. Seeds and original raw files/adopted labels copied; learned models and scores rebuilt.",
+  "executed_steps": [
+    {
+      "script": "00_clean_january.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "00_download_external.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "03_prepare_external_v3.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "04_bow_tfidf.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "05_word2vec.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "06_fasttext.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "07_document_vectors.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "08_prepare_binary_split.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "09_train_compare.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "10_prepare_fourclass_split.py",
+      "arguments": [],
+      "exit_code": 0
+    },
+    {
+      "script": "09_train_compare.py",
+      "arguments": [
+        "--task",
+        "fourclass"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "checks": {
+    "binary_split_ids_match": true,
+    "binary_TF-IDF_predictions_match": true,
+    "binary_TF-IDF_metrics_match": true,
+    "binary_FastText平均向量_predictions_match": true,
+    "binary_FastText平均向量_metrics_match": true,
+    "fourclass_split_ids_match": true,
+    "fourclass_TF-IDF_predictions_match": true,
+    "fourclass_TF-IDF_metrics_match": true,
+    "fourclass_FastText平均向量_predictions_match": true,
+    "fourclass_FastText平均向量_metrics_match": true,
+    "external_selected_corpus_bytes_match": true,
+    "original_models_and_score_files_unchanged": true
+  },
+  "reproduced_outcomes": [
+    {
+      "task": "binary",
+      "representation": "TF-IDF",
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "task": "binary",
+      "representation": "FastText平均向量",
+      "accuracy": 0.9,
+      "macro_f1": 0.898989898989899
+    },
+    {
+      "task": "fourclass",
+      "representation": "TF-IDF",
+      "accuracy": 0.9,
+      "macro_f1": 0.8999999999999999
+    },
+    {
+      "task": "fourclass",
+      "representation": "FastText平均向量",
+      "accuracy": 0.8,
+      "macro_f1": 0.7833333333333334
+    }
+  ],
+  "elapsed_seconds": 22.59058240003651,
+  "note": "Timings and serialized model lifecycle metadata can differ; original experiment time records retained.",
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

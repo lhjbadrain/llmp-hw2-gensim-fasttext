@@ -1,0 +1,101 @@
+{
+  "purpose": "External news Word2Vec representation exploration; no theme labels used and no classification performed.",
+  "source": "PROJECT\\data\\external\\news600.v3.tokens.jsonl",
+  "source_sha256": "5c3ea7969fb29a4442979d04861e53e725a5e8154d47aecbed410f0d45e98c77",
+  "documents": 600,
+  "total_input_tokens": 240989,
+  "parameters": {
+    "vector_size": 64,
+    "window": 5,
+    "min_count": 3,
+    "sg": 1,
+    "negative": 5,
+    "hs": 0,
+    "sample": 0.001,
+    "epochs": 5,
+    "workers": 1,
+    "seed": 42,
+    "sorted_vocab": 1
+  },
+  "vocabulary_size": 8787,
+  "build_and_train_seconds": 2.485737400013022,
+  "queries_and_neighbors": {
+    "球队": [
+      {
+        "word": "禅师",
+        "cosine_similarity": 0.9266583323478699
+      },
+      {
+        "word": "伊格",
+        "cosine_similarity": 0.9226670265197754
+      },
+      {
+        "word": "达拉",
+        "cosine_similarity": 0.915966808795929
+      },
+      {
+        "word": "执教",
+        "cosine_similarity": 0.9151780009269714
+      },
+      {
+        "word": "渴望",
+        "cosine_similarity": 0.9125624299049377
+      }
+    ],
+    "基金": [
+      {
+        "word": "股东",
+        "cosine_similarity": 0.7963699698448181
+      },
+      {
+        "word": "专户",
+        "cosine_similarity": 0.7913793921470642
+      },
+      {
+        "word": "系",
+        "cosine_similarity": 0.7883394360542297
+      },
+      {
+        "word": "股",
+        "cosine_similarity": 0.7875855565071106
+      },
+      {
+        "word": "发行",
+        "cosine_similarity": 0.786160409450531
+      }
+    ],
+    "经济": [
+      {
+        "word": "复苏",
+        "cosine_similarity": 0.8577845096588135
+      },
+      {
+        "word": "政策",
+        "cosine_similarity": 0.8406656384468079
+      },
+      {
+        "word": "世界",
+        "cosine_similarity": 0.8342494368553162
+      },
+      {
+        "word": "企稳",
+        "cosine_similarity": 0.8298261761665344
+      },
+      {
+        "word": "形势",
+        "cosine_similarity": 0.8283959627151489
+      }
+    ]
+  },
+  "gensim_version": "4.4.0",
+  "python_version": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pythonhashseed": "42",
+  "limitations": [
+    "Small corpus; neighbor quality is exploratory, not a formal similarity benchmark.",
+    "Each whole article is a training sequence; windows may cross sentence boundaries.",
+    "min_count counts total token occurrences, unlike Dictionary no_below which counts documents.",
+    "Fixed seed, hash seed and single worker reduce randomness; different package versions or hardware may still differ."
+  ],
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}

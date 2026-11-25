@@ -1,0 +1,560 @@
+{
+  "task": "binary",
+  "train_documents": 30,
+  "test_documents": 10,
+  "split_manifest_sha256": "f2afb35c1a56d3864c10a7b198fe23d0cf46d6a538df229180f48be44c6022a1",
+  "classifier_parameters": {
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "tfidf_parameters": {
+    "min_df": 1,
+    "max_df": 1.0,
+    "ngram_range": [
+      1,
+      1
+    ],
+    "norm": "l2",
+    "smooth_idf": true,
+    "sublinear_tf": false
+  },
+  "tfidf_implementation_note": "Classification baseline uses sklearn smoothed IDF; earlier Gensim representation demo used default log2(N/df). They are separate experiments, not identical weights.",
+  "fasttext_training_before_classification_seconds": 3.4389079000102356,
+  "fasttext_parameters": {
+    "vector_size": 64,
+    "window": 5,
+    "min_count": 3,
+    "sg": 1,
+    "negative": 5,
+    "hs": 0,
+    "sample": 0.001,
+    "epochs": 5,
+    "workers": 1,
+    "seed": 42,
+    "sorted_vocab": 1,
+    "min_n": 2,
+    "max_n": 4,
+    "bucket": 20000
+  },
+  "fasttext_model_sha256": "1d4b3b4899df814c5b19cfad07fec3993052595c93c2d11460af69bb6d038910",
+  "timing_note": "Feature time includes train/test feature construction and, for FastText, model loading. Classifier fitting and prediction are also separated. Pipeline time excludes model saving and metric computation. FastText unsupervised pretraining is reported separately, not included in classification pipeline time.",
+  "versions": {
+    "gensim": "4.4.0",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.5"
+  },
+  "evaluations": [
+    {
+      "representation": "TF-IDF",
+      "feature_dimensions": 1730,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "classification_report": {
+        "体育": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "国际": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        }
+      },
+      "confusion_matrix_label_order": [
+        "体育",
+        "国际"
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "feature_seconds_including_test_transform": 0.012355899962130934,
+      "classifier_fit_seconds": 0.010445900028571486,
+      "predict_seconds": 0.0014123999862931669,
+      "feature_fit_predict_seconds": 0.024223799991887063,
+      "predictions": [
+        {
+          "article_id": "19980105-06-011",
+          "sample_id": "B02-33",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980108-08-001",
+          "sample_id": "B02-36",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        },
+        {
+          "article_id": "19980114-08-003",
+          "sample_id": "B02-26",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        },
+        {
+          "article_id": "19980114-08-008",
+          "sample_id": "B02-15",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        },
+        {
+          "article_id": "19980115-06-012",
+          "sample_id": "B02-08",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980119-06-012",
+          "sample_id": "B02-32",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980119-06-019",
+          "sample_id": "B02-31",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980119-08-005",
+          "sample_id": "B02-38",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        },
+        {
+          "article_id": "19980120-06-002",
+          "sample_id": "B02-13",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980126-08-004",
+          "sample_id": "B02-34",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        }
+      ],
+      "errors": [],
+      "fasttext_coverage": null
+    },
+    {
+      "representation": "FastText平均向量",
+      "feature_dimensions": 64,
+      "accuracy": 0.9,
+      "macro_f1": 0.898989898989899,
+      "classification_report": {
+        "体育": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 5.0
+        },
+        "国际": {
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1-score": 0.9090909090909091,
+          "support": 5.0
+        },
+        "accuracy": 0.9,
+        "macro avg": {
+          "precision": 0.9166666666666667,
+          "recall": 0.9,
+          "f1-score": 0.898989898989899,
+          "support": 10.0
+        },
+        "weighted avg": {
+          "precision": 0.9166666666666667,
+          "recall": 0.9,
+          "f1-score": 0.898989898989899,
+          "support": 10.0
+        }
+      },
+      "confusion_matrix_label_order": [
+        "体育",
+        "国际"
+      ],
+      "confusion_matrix": [
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "feature_seconds_including_test_transform": 0.1559510999941267,
+      "classifier_fit_seconds": 0.0025154000031761825,
+      "predict_seconds": 0.0001480000209994614,
+      "feature_fit_predict_seconds": 0.15862649999326095,
+      "predictions": [
+        {
+          "article_id": "19980105-06-011",
+          "sample_id": "B02-33",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980108-08-001",
+          "sample_id": "B02-36",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        },
+        {
+          "article_id": "19980114-08-003",
+          "sample_id": "B02-26",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        },
+        {
+          "article_id": "19980114-08-008",
+          "sample_id": "B02-15",
+          "true_label": "体育",
+          "predicted_label": "国际",
+          "correct": false
+        },
+        {
+          "article_id": "19980115-06-012",
+          "sample_id": "B02-08",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980119-06-012",
+          "sample_id": "B02-32",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980119-06-019",
+          "sample_id": "B02-31",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980119-08-005",
+          "sample_id": "B02-38",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        },
+        {
+          "article_id": "19980120-06-002",
+          "sample_id": "B02-13",
+          "true_label": "国际",
+          "predicted_label": "国际",
+          "correct": true
+        },
+        {
+          "article_id": "19980126-08-004",
+          "sample_id": "B02-34",
+          "true_label": "体育",
+          "predicted_label": "体育",
+          "correct": true
+        }
+      ],
+      "errors": [
+        {
+          "article_id": "19980114-08-008",
+          "sample_id": "B02-15",
+          "true_label": "体育",
+          "predicted_label": "国际",
+          "correct": false
+        }
+      ],
+      "fasttext_coverage": {
+        "train": [
+          {
+            "article_id": "19980101-03-002",
+            "tokens": 138,
+            "known_token_occurrences": 78,
+            "oov_token_occurrences": 60
+          },
+          {
+            "article_id": "19980101-03-008",
+            "tokens": 307,
+            "known_token_occurrences": 246,
+            "oov_token_occurrences": 61
+          },
+          {
+            "article_id": "19980105-06-004",
+            "tokens": 112,
+            "known_token_occurrences": 71,
+            "oov_token_occurrences": 41
+          },
+          {
+            "article_id": "19980105-06-014",
+            "tokens": 73,
+            "known_token_occurrences": 55,
+            "oov_token_occurrences": 18
+          },
+          {
+            "article_id": "19980105-06-017",
+            "tokens": 65,
+            "known_token_occurrences": 32,
+            "oov_token_occurrences": 33
+          },
+          {
+            "article_id": "19980106-01-006",
+            "tokens": 336,
+            "known_token_occurrences": 278,
+            "oov_token_occurrences": 58
+          },
+          {
+            "article_id": "19980106-05-011",
+            "tokens": 241,
+            "known_token_occurrences": 187,
+            "oov_token_occurrences": 54
+          },
+          {
+            "article_id": "19980106-06-002",
+            "tokens": 179,
+            "known_token_occurrences": 137,
+            "oov_token_occurrences": 42
+          },
+          {
+            "article_id": "19980107-06-016",
+            "tokens": 66,
+            "known_token_occurrences": 49,
+            "oov_token_occurrences": 17
+          },
+          {
+            "article_id": "19980109-06-003",
+            "tokens": 235,
+            "known_token_occurrences": 181,
+            "oov_token_occurrences": 54
+          },
+          {
+            "article_id": "19980109-06-016",
+            "tokens": 73,
+            "known_token_occurrences": 48,
+            "oov_token_occurrences": 25
+          },
+          {
+            "article_id": "19980109-08-008",
+            "tokens": 58,
+            "known_token_occurrences": 36,
+            "oov_token_occurrences": 22
+          },
+          {
+            "article_id": "19980113-06-011",
+            "tokens": 138,
+            "known_token_occurrences": 107,
+            "oov_token_occurrences": 31
+          },
+          {
+            "article_id": "19980114-08-005",
+            "tokens": 196,
+            "known_token_occurrences": 129,
+            "oov_token_occurrences": 67
+          },
+          {
+            "article_id": "19980114-08-009",
+            "tokens": 67,
+            "known_token_occurrences": 49,
+            "oov_token_occurrences": 18
+          },
+          {
+            "article_id": "19980116-08-008",
+            "tokens": 106,
+            "known_token_occurrences": 76,
+            "oov_token_occurrences": 30
+          },
+          {
+            "article_id": "19980119-06-014",
+            "tokens": 102,
+            "known_token_occurrences": 78,
+            "oov_token_occurrences": 24
+          },
+          {
+            "article_id": "19980119-08-008",
+            "tokens": 178,
+            "known_token_occurrences": 143,
+            "oov_token_occurrences": 35
+          },
+          {
+            "article_id": "19980119-08-009",
+            "tokens": 179,
+            "known_token_occurrences": 139,
+            "oov_token_occurrences": 40
+          },
+          {
+            "article_id": "19980121-08-003",
+            "tokens": 149,
+            "known_token_occurrences": 107,
+            "oov_token_occurrences": 42
+          },
+          {
+            "article_id": "19980122-06-011",
+            "tokens": 78,
+            "known_token_occurrences": 50,
+            "oov_token_occurrences": 28
+          },
+          {
+            "article_id": "19980122-08-001",
+            "tokens": 179,
+            "known_token_occurrences": 126,
+            "oov_token_occurrences": 53
+          },
+          {
+            "article_id": "19980122-08-007",
+            "tokens": 85,
+            "known_token_occurrences": 60,
+            "oov_token_occurrences": 25
+          },
+          {
+            "article_id": "19980123-06-012",
+            "tokens": 99,
+            "known_token_occurrences": 58,
+            "oov_token_occurrences": 41
+          },
+          {
+            "article_id": "19980123-08-007",
+            "tokens": 169,
+            "known_token_occurrences": 124,
+            "oov_token_occurrences": 45
+          },
+          {
+            "article_id": "19980123-08-009",
+            "tokens": 144,
+            "known_token_occurrences": 111,
+            "oov_token_occurrences": 33
+          },
+          {
+            "article_id": "19980126-06-006",
+            "tokens": 126,
+            "known_token_occurrences": 95,
+            "oov_token_occurrences": 31
+          },
+          {
+            "article_id": "19980126-08-002",
+            "tokens": 175,
+            "known_token_occurrences": 114,
+            "oov_token_occurrences": 61
+          },
+          {
+            "article_id": "19980126-08-010",
+            "tokens": 196,
+            "known_token_occurrences": 137,
+            "oov_token_occurrences": 59
+          },
+          {
+            "article_id": "19980127-08-008",
+            "tokens": 221,
+            "known_token_occurrences": 160,
+            "oov_token_occurrences": 61
+          }
+        ],
+        "test": [
+          {
+            "article_id": "19980105-06-011",
+            "tokens": 168,
+            "known_token_occurrences": 117,
+            "oov_token_occurrences": 51
+          },
+          {
+            "article_id": "19980108-08-001",
+            "tokens": 197,
+            "known_token_occurrences": 134,
+            "oov_token_occurrences": 63
+          },
+          {
+            "article_id": "19980114-08-003",
+            "tokens": 146,
+            "known_token_occurrences": 109,
+            "oov_token_occurrences": 37
+          },
+          {
+            "article_id": "19980114-08-008",
+            "tokens": 135,
+            "known_token_occurrences": 108,
+            "oov_token_occurrences": 27
+          },
+          {
+            "article_id": "19980115-06-012",
+            "tokens": 93,
+            "known_token_occurrences": 53,
+            "oov_token_occurrences": 40
+          },
+          {
+            "article_id": "19980119-06-012",
+            "tokens": 185,
+            "known_token_occurrences": 138,
+            "oov_token_occurrences": 47
+          },
+          {
+            "article_id": "19980119-06-019",
+            "tokens": 71,
+            "known_token_occurrences": 57,
+            "oov_token_occurrences": 14
+          },
+          {
+            "article_id": "19980119-08-005",
+            "tokens": 155,
+            "known_token_occurrences": 91,
+            "oov_token_occurrences": 64
+          },
+          {
+            "article_id": "19980120-06-002",
+            "tokens": 139,
+            "known_token_occurrences": 92,
+            "oov_token_occurrences": 47
+          },
+          {
+            "article_id": "19980126-08-004",
+            "tokens": 168,
+            "known_token_occurrences": 127,
+            "oov_token_occurrences": 41
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Small curated sample with AI-assisted user-accepted labels; not a representative benchmark or independently annotated gold test set.",
+    "Held-out test evaluated for the fixed comparison; do not tune parameters using its scores.",
+    "FastText uses additional independent unlabeled news; representation fitting data differ from TF-IDF train-only fitting, and this must be disclosed.",
+    "Small timing differences are unstable; no repeated performance benchmark."
+  ],
+  "publication_note": "Sanitized original experimental record: full article text and word sequences omitted, local paths relative. Metrics, labels, IDs, parameters and timing values retained. Historical hashes refer to the original local run."
+}
